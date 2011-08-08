@@ -1,0 +1,9 @@
+DESCRIPTION="C/C++ Last.fm scrobbling library"
+HOMEPAGE="http://code.google.com/p/lastfmlib/"
+SRC_URI="http://lastfmlib.googlecode.com/files/${P}.tar.gz"
+
+PKG_NAMES="liblastfmlib1 liblastfmlib-devel"
+liblastfmlib1_CONTENTS="usr/bin/cyglastfmlib-1.dll"
+liblastfmlib_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
