@@ -1,0 +1,16 @@
+NAME="lastfmlib"
+VERSION=0.4.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="C/C++ Last.fm scrobbling library"
+DESCRIPTION="lastfmlib is library that provides an implementation of the
+Last.fm Submissions Protocol v1.2. It allows you to scrobble your tracks
+on Last.fm"
+HOMEPAGE="http://code.google.com/p/lastfmlib/"
+SRC_URI="http://lastfmlib.googlecode.com/files/${NAME}-${VERSION}.tar.gz"
+
+PKG_NAMES="liblastfmlib1 liblastfmlib-devel"
+liblastfmlib1_CONTENTS="usr/bin/cyglastfmlib-1.dll"
+liblastfmlib_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
