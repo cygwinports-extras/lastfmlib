@@ -1,6 +1,6 @@
 NAME="lastfmlib"
 VERSION=0.4.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="C/C++ Last.fm scrobbling library"
 DESCRIPTION="lastfmlib is library that provides an implementation of the
